@@ -19,9 +19,12 @@ export type Space = {
     name: string;
     type: string;
     assets: Asset[];
+    deleted: boolean;
 };
 export type Asset = {
     asset_id: string;
     type: string;
     description: string;
+    current_specifications: JSON;
+    deleted: boolean;
 };
