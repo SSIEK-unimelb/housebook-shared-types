@@ -1,7 +1,7 @@
 export interface ChangeLog {
     id: string;
     asset_id: string;
-    specifications: Record<string, any>;
+    specifications: JSON;
     change_description: string;
     changed_by_user_id?: string;
     created_at: string;
