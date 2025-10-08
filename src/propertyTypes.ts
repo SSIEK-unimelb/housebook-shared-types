@@ -31,7 +31,3 @@ export type Asset = {
   deleted: boolean;
 };
 
-// dont think theres a JSONB type on ts...
-// guess i didnt add it yet
-// bcs there are two versions of changelog? one is defined in a component file
-// send me the changelog type i can add it now
