@@ -7,8 +7,8 @@ export interface AssetType {
 export interface Asset {
   id: string;
   description: string;
-  type?: string; 
-  curretSpecifications: Record<string, any>;
+  type?: string;
+  currentSpecifications: Record<string, any>;
   deleted: boolean;
   assetTypes: AssetType;
 }
