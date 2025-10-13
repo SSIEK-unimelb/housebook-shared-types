@@ -1,9 +1,9 @@
-export interface OwnerData {
-  firstName: string,
-  lastName: string,
-  email: string,
-  phone: string
-}
+// export interface OwnerData {
+//   firstName: string,
+//   lastName: string,
+//   email: string,
+//   phone: string
+// }
 
 // Setting what FormData looks like
 export interface FormData {

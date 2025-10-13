@@ -1,4 +1,27 @@
-export type Property = {
+export interface AssetType {
+  id: string;
+  name: string;
+  discipline: string;
+}
+
+export interface Asset {
+  id: string;
+  description: string;
+  type?: string; 
+  current_specifications: Record<string, any>;
+  deleted: boolean;
+  AssetTypes: AssetType;
+}
+
+export interface Space {
+  id: string;
+  name: string;
+  type: string;
+  deleted: boolean;
+  Assets: Asset[];
+}
+
+export interface Property {
   property_id: string;
   address: string;
   description: string;
@@ -9,25 +32,8 @@ export type Property = {
   lastUpdated: string;
   completionStatus: number;
   totalFloorArea?: number;
-  spaces?: Space[];
+  Spaces?: Space[];
   images?: string[];
   created_at: string;
   splash_image?: string;
-};
-
-export type Space = {
-  space_id: string;
-  name: string;
-  type: string;
-  assets: Asset[];
-  deleted: boolean;
-};
-
-export type Asset = {
-  asset_id: string;
-  type: string;
-  description: string;
-  current_specifications: JSON;
-  deleted: boolean;
-};
-
+}

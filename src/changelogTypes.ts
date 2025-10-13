@@ -14,13 +14,13 @@ export interface ChangeLog {
   property_id?: string;
 }
 
-enum ChangeLogStatus {
+export enum ChangeLogStatus {
   PENDING = "PENDING",
   ACCEPTED = "ACCEPTED",
   DECLINED = "DECLINED",
 }
 
-enum ChangeLogAction {
+export enum ChangeLogAction {
   CREATED = "CREATED",
   UPDATED = "UPDATED",
   DELETED = "DELETED",
