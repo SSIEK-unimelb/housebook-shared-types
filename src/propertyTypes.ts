@@ -8,9 +8,9 @@ export interface Asset {
   id: string;
   description: string;
   type?: string; 
-  current_specifications: Record<string, any>;
+  curretSpecifications: Record<string, any>;
   deleted: boolean;
-  AssetTypes: AssetType;
+  assetTypes: AssetType;
 }
 
 export interface Space {
@@ -18,11 +18,11 @@ export interface Space {
   name: string;
   type: string;
   deleted: boolean;
-  Assets: Asset[];
+  assets: Asset[];
 }
 
 export interface Property {
-  property_id: string;
+  propertyId: string;
   address: string;
   description: string;
   pin: string;
@@ -32,8 +32,8 @@ export interface Property {
   lastUpdated: string;
   completionStatus: number;
   totalFloorArea?: number;
-  Spaces?: Space[];
+  spaces?: Space[];
   images?: string[];
-  created_at: string;
-  splash_image?: string;
+  createdAt: string;
+  splashImage?: string;
 }

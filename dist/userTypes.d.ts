@@ -1,6 +1,6 @@
-export type Owner = {
-    owner_id: string;
-    first_name: string;
-    last_name: string;
+export interface Owner {
+    ownerId: string;
+    firstName: string;
+    lastName: string;
     email: string;
-};
+}

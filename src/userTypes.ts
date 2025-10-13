@@ -1,6 +1,6 @@
 export interface Owner {
-  owner_id: string;
-  first_name: string;
-  last_name: string;
+  ownerId: string;
+  firstName: string;
+  lastName: string;
   email: string;
 }

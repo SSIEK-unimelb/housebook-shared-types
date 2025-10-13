@@ -1,9 +1,3 @@
-export interface OwnerData {
-    firstName: string;
-    lastName: string;
-    email: string;
-    phone: string;
-}
 export interface FormData {
     propertyName: string;
     propertyDescription: string;

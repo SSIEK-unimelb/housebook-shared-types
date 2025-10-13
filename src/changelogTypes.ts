@@ -1,17 +1,17 @@
 export interface ChangeLog {
   id: string;
-  asset_id: string;
+  assetId: string;
   specifications: JSON;
-  change_description: string;
-  changed_by_user_id?: string;
+  changeDescription: string;
+  changedByUserId?: string;
   created_at: string;
   status: ChangeLogStatus;
   actions: ChangeLogAction;
   deleted: boolean;
   // Joined data
-  asset_name?: string;
-  space_name?: string;
-  property_id?: string;
+  assetName?: string;
+  spaceName?: string;
+  propertyId?: string;
 }
 
 export enum ChangeLogStatus {

@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/SSIEK-unimelb/housebook-shared-types/issues"
   },
-  "homepage": "https://github.com/SSIEK-unimelb/housebook-shared-types#readme"
+  "homepage": "https://github.com/SSIEK-unimelb/housebook-shared-types#readme",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
 }

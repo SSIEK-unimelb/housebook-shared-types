@@ -1,5 +1,25 @@
-export type Property = {
-    property_id: string;
+export interface AssetType {
+    id: string;
+    name: string;
+    discipline: string;
+}
+export interface Asset {
+    id: string;
+    description: string;
+    type?: string;
+    curretSpecifications: Record<string, any>;
+    deleted: boolean;
+    assetTypes: AssetType;
+}
+export interface Space {
+    id: string;
+    name: string;
+    type: string;
+    deleted: boolean;
+    assets: Asset[];
+}
+export interface Property {
+    propertyId: string;
     address: string;
     description: string;
     pin: string;
@@ -11,20 +31,6 @@ export type Property = {
     totalFloorArea?: number;
     spaces?: Space[];
     images?: string[];
-    created_at: string;
-    splash_image?: string;
-};
-export type Space = {
-    space_id: string;
-    name: string;
-    type: string;
-    assets: Asset[];
-    deleted: boolean;
-};
-export type Asset = {
-    asset_id: string;
-    type: string;
-    description: string;
-    current_specifications: JSON;
-    deleted: boolean;
-};
+    createdAt: string;
+    splashImage?: string;
+}
