@@ -11,6 +11,7 @@ export interface FormData {
     propertyName: string,
     propertyDescription: string,
     address: string,
+    totalFloorArea: number,
     // Plans & Documents
     floorPlans: File[],
     buildingPlans: File[]

@@ -2,6 +2,7 @@ export interface FormData {
     propertyName: string;
     propertyDescription: string;
     address: string;
+    totalFloorArea: number;
     floorPlans: File[];
     buildingPlans: File[];
 }
