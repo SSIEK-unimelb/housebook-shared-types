@@ -14,7 +14,9 @@ export interface FormData {
     totalFloorArea: number,
     // Plans & Documents
     floorPlans: File[],
-    buildingPlans: File[]
+    buildingPlans: File[],
+    // Optional reference code from another property
+    referenceCode?: string,
 }
 
 // Setting what an Asset or Space looks like

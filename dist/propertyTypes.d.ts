@@ -33,4 +33,16 @@ export interface Property {
     images?: string[];
     createdAt: string;
     splashImage?: string;
+    referenceCode?: string;
+}
+export interface PropertyReferral {
+    referralId: string;
+    referredPropertyId: string;
+    referredPropertyName: string;
+    referredPropertyAddress: string;
+    referredByUserId: string;
+    referredByFirstName: string;
+    referredByLastName: string;
+    referredByEmail: string;
+    createdAt: string;
 }

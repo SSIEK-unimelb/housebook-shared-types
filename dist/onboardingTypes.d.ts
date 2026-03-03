@@ -5,6 +5,7 @@ export interface FormData {
     totalFloorArea: number;
     floorPlans: File[];
     buildingPlans: File[];
+    referenceCode?: string;
 }
 export interface AssetFeature {
     name: string;
